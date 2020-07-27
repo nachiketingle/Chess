@@ -18,6 +18,7 @@ class King(Piece):
     def draw_self(self, screen, row, col):
         Piece.draw_piece(self, screen, row, col)
 
+    # Update move board with locations that the piece can go to
     def indicate_valid(self, game_board, move_board):
         curr_i = self.pos[0]
         curr_j = self.pos[1]
